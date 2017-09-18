@@ -57,7 +57,7 @@ if [ -d "./dist" ];
 
 	# copy
 	echo -e "=================copy dist to dest========================"
-	cp -R ./dist $DEST_PATH$1
+	cp -R ./dist $DEST_PATH$1/
 
 	# echo result
 	echo -e "=================Deploy succeed========================"

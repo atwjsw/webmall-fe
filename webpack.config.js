@@ -2,7 +2,7 @@
 * @Author: atwjsw
 * @Date:   2017-09-16 18:49:54
 * @Last Modified by:   atwjsw
-* @Last Modified time: 2017-09-17 21:11:17
+* @Last Modified time: 2017-09-18 17:12:36
 */
 var webpack             = require('webpack');
 var ExtractTextPlugin   = require("extract-text-webpack-plugin");
@@ -33,7 +33,7 @@ var config = {
   },  
   output: {
     filename : 'js/[name].js',
-    publicPath : '/dist',
+    publicPath : WEBPACK_ENV === 'online' ? '//s.happymmall.com/webmall-fe/dist/' : '/dist/',
     path : './dist'
   },
   externals: {
