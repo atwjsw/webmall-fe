@@ -15,7 +15,7 @@ if [ ! -n "$1" ];
 	exit
 fi
 
-if [ $1 = "mmall-fe" ];
+if [ $1 = "webmall-fe" ];
 	then
 	echo -e "=================Enter mmall-fe========================"
 	cd $GIT_HOME$1
