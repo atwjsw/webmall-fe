@@ -2,7 +2,7 @@
 * @Author: atwjsw
 * @Date:   2017-09-16 18:49:54
 * @Last Modified by:   atwjsw
-* @Last Modified time: 2017-09-17 20:07:45
+* @Last Modified time: 2017-09-17 21:11:17
 */
 var webpack             = require('webpack');
 var ExtractTextPlugin   = require("extract-text-webpack-plugin");
@@ -28,7 +28,7 @@ var config = {
   entry: {
     'common' : ['./src/page/common/index.js', 'webpack-dev-server/client?http://localhost:8088'],
   	'index' : ['./src/page/index/index.js'],
-  	'login' : ['./src/page/login/index.js'],
+  	'user-login' : ['./src/page/user-login/index.js'],
     'result' : ['./src/page/result/index.js']
   },  
   output: {
@@ -64,7 +64,7 @@ var config = {
     new ExtractTextPlugin("css/[name].css"),
     // html模板处理
     new HtmlWebpackPlugin(getHtmlConfig('index', '首页')),
-    new HtmlWebpackPlugin(getHtmlConfig('login', '用户登录')), 
+    new HtmlWebpackPlugin(getHtmlConfig('user-login', '用户登录')), 
     new HtmlWebpackPlugin(getHtmlConfig('result', '操作结果')),   
   ]
 };

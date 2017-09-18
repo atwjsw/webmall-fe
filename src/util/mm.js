@@ -2,7 +2,7 @@
 * @Author: atwjsw
 * @Date:   2017-09-17 00:44:11
 * @Last Modified by:   atwjsw
-* @Last Modified time: 2017-09-17 17:04:25
+* @Last Modified time: 2017-09-18 00:12:03
 */
 
 'use strict';
@@ -14,10 +14,10 @@ var _mm = {
 	request : function(param) {
 		var _this = this;
 		$.ajax({
-			type		: param.method || 'get',
-			url			: param.url || '',
-			dataType	: param.type || 'get',
-			data 		: param.data || '',
+			type		: param.method 	|| 'get',
+			url			: param.url 	|| '',
+			dataType	: param.type 	|| 'json',
+			data 		: param.data 	|| '',
 			success		: function(res) {
 				// 请求成功
 				if (0 === res.status) {
@@ -28,7 +28,7 @@ var _mm = {
 					_this.doLogin();
 				}
 				// 请求数据错误
-				else if (1 === res.status) {
+				else if (1 === res.status) {					
 					typeof param.error === 'function' && param.error(res.msg)
 				} 
 			},
@@ -55,14 +55,14 @@ var _mm = {
 	},
 	//成功提示
 	successTips : function(msg) {
-		alert(mag || '操作成功');
+		alert(msg || '操作成功');
 	},
 	//错误提示
 	errorTips : function(msg) {
 		alert(mag || '哪里不对了~');
 	},
 	// 字段的验证，支持非空、 手机、 邮箱的判断
-	valaidate : function(value, type) {
+	validate : function(value, type) {
 		var value = $.trim(value);
 		//非空验证
 		if('require' === type) {
@@ -79,7 +79,7 @@ var _mm = {
 	},
 	// 统一登录处理
 	doLogin : function() {
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	// 统一登录处理
 	goHome : function() {
