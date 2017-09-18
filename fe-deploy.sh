@@ -62,5 +62,5 @@ if [ -d "./dist" ];
 	# echo result
 	echo -e "=================Deploy succeed========================"
 else
-	echo -e "=================Deploy error========================"
+	echo -e "=================Deploy error========================="
 fi
