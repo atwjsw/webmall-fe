@@ -1,0 +1,19 @@
+/*
+* @Author: atwjsw
+* @Date:   2017-09-17 15:39:54
+* @Last Modified by:   atwjsw
+* @Last Modified time: 2017-09-17 15:51:49
+*/
+.nav-simple {
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+
+.nav-simple .logo {
+	font-size: 26px;
+	font-weight: bold;
+	color: #c60023;
+}
+

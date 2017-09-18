@@ -1,0 +1,27 @@
+/*
+* @Author: atwjsw
+* @Date:   2017-09-17 19:11:41
+* @Last Modified by:   atwjsw
+* @Last Modified time: 2017-09-17 19:58:48
+*/
+/* 导航主体	*/
+.nav-side {
+	float: left;
+	width: 130px;
+	min-height: 100px;
+}
+.nav-side .nav-item{
+	line-height: 20px;
+	font-size: 13px;
+}
+.nav-side .nav-item .link {
+	color: #888;
+}
+.nav-side .nav-item.active .link {
+	color: #c60023;
+}
+/* 右侧内容区 */
+.content.with-nav {
+	float: left;
+	width: 950px;
+}

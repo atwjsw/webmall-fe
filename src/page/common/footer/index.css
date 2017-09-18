@@ -1,0 +1,25 @@
+/*
+* @Author: atwjsw
+* @Date:   2017-09-17 17:49:30
+* @Last Modified by:   atwjsw
+* @Last Modified time: 2017-09-17 17:53:57
+*/
+.footer {
+	padding: 10px;
+}
+
+.footer .links {
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
+
+.footer .links .link {
+	padding: 0 10px;
+}	
+
+.footer .copyright {
+	text-align: center;
+	color: #666;
+	line-height: 30px;
+}
